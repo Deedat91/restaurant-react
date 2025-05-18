@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 
@@ -14,10 +14,11 @@ import Contact from "./pages/Contact"
 // Context
 import { CartProvider } from "./context/CartContext"
 
+
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <BrowserRouter basename="/restaurant-react">
         <div className="app-container d-flex flex-column min-vh-100">
           <Header />
           <main className="flex-grow-1">
@@ -29,7 +30,7 @@ function App() {
           </main>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </CartProvider>
   )
 }

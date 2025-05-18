@@ -6,7 +6,8 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section" style={{ backgroundImage: "url('/images/hero1.jpg')" }}>
+      <section className="hero-section" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero1.jpg)` }}
+>
         <div className="hero-overlay"></div>
         <Container className="hero-content">
           <h1>
@@ -68,7 +69,7 @@ const Home = () => {
         className="py-5 text-white"
         style={{
           background:
-            "linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%), url(/images/hero2.jpg)",
+          `linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%), url(${process.env.PUBLIC_URL}/images/hero1.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

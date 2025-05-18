@@ -8,7 +8,7 @@ const Footer = () => {
         <Row className="mb-4">
           <Col lg={3} md={6} className="mb-4 mb-lg-0">
             <div className="d-flex flex-column align-items-start">
-              <img src="/daveshotchickenlogo.png" alt="Dave's Hot Chicken Logo" height="50" className="mb-3" />
+              <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Dave's Hot Chicken Logo" height="50" className="mb-3" />
               <span className="fs-5 fw-bold">Dave's Hot Chicken</span>
             </div>
           </Col>

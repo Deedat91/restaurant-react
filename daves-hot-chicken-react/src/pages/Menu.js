@@ -4,6 +4,7 @@ import MenuItem from "../components/MenuItems"
 
 const Menu = () => {
   // Menu data
+  const publicImage = (filename) => `${process.env.PUBLIC_URL}/images/${filename}`
   const menuData = {
     chicken: [
       {
@@ -11,7 +12,7 @@ const Menu = () => {
         name: "Spicy Grilled Chicken",
         price: 12.99,
         description: "Deliciously marinated with a spicy rub, grilled to perfection. Served with house-made sauce.",
-        image: "/images/spicy_grilled_chicken.avif",
+        image: publicImage("spicy_grilled_chicken.avif"),
       },
       {
         id: 2,
@@ -19,7 +20,7 @@ const Menu = () => {
         price: 11.99,
         description:
           "Sweet and savory, our honey garlic chicken is a crowd pleaser. Glazed with our signature honey garlic sauce.",
-        image: "/images/spicy_grilled_chicken.avif",
+        image: publicImage("spicy_grilled_chicken.avif"),
       },
       {
         id: 3,
@@ -27,14 +28,14 @@ const Menu = () => {
         price: 13.99,
         description:
           "Our famous chicken tenders coated in Nashville-style hot spices. Served with cooling ranch sauce.",
-        image: "/images/tenders.avif",
+        image: publicImage("tenders.avif"),
       },
       {
         id: 4,
         name: "Classic Chicken Sandwich",
         price: 10.99,
         description: "Crispy chicken breast on a toasted brioche bun with pickles, coleslaw, and Dave's special sauce.",
-        image: "/images/SANDWICH.avif",
+        image: publicImage("SANDWICH.avif"),
       },
     ],
     sides: [
@@ -43,42 +44,42 @@ const Menu = () => {
         name: "Seasoned Fries",
         price: 3.99,
         description: "Crispy fries seasoned with our signature spice mix. The perfect companion to our hot chicken.",
-        image: "/images/seasoned_fries.avif",
+        image: publicImage("seasoned_fries.avif"),
       },
       {
         id: 6,
         name: "Garlic Bread",
         price: 2.5,
         description: "Freshly baked bread topped with garlic butter and herbs. Perfectly toasted to a golden crisp.",
-        image: "/images/honey_garlic_chicken.avif",
+        image: publicImage("honey_garlic_chicken.avif"),
       },
       {
         id: 7,
         name: "Loaded Nachos",
         price: 4.99,
         description: "Crispy nachos topped with jalapeños, salsa, and melted cheese. Add chicken for $2.50 extra.",
-        image: "/images/nachos.avif",
+        image: publicImage("nachos.avif"),
       },
       {
         id: 8,
         name: "Sweet Potato Fries",
         price: 3.75,
         description: "Perfectly fried sweet potato fries with a hint of salt. Served with our signature dipping sauce.",
-        image: "images/sweetfries.avif",
+        image: publicImage("sweetfries.avif"),
       },
       {
         id: 9,
         name: "Coleslaw",
         price: 2.99,
         description: "Freshly made with a tangy, creamy dressing. The perfect cool complement to our hot chicken.",
-        image: "/images/coleslaw.avif",
+        image: publicImage("coleslaw.avif"),
       },
       {
         id: 10,
         name: "Mac & Cheese",
         price: 4.5,
         description: "Creamy, cheesy, and indulgent. Our signature mac & cheese is the ultimate comfort food.",
-        image: "/images/maccheese.avif",
+        image: publicImage("maccheese.avif"),
       },
     ],
     combos: [
@@ -87,7 +88,7 @@ const Menu = () => {
         name: "Single Meal Combo",
         price: 14.99,
         description: "2 tenders or 1 sandwich with 1 side and a drink. Perfect for a satisfying meal.",
-        image: "/images/single.avif",
+        image: publicImage("single.avif"),
       },
       {
         id: 12,
@@ -95,21 +96,21 @@ const Menu = () => {
         price: 12.99,
         description:
           "A delightful assortment of our vegetarian sides, including mac & cheese, coleslaw, and garlic bread.",
-        image: "/images/vege.avif",
+        image: publicImage("vege.avif"),
       },
       {
         id: 13,
         name: "Quick Snack Pack",
         price: 8.99,
         description: "2 tenders with 1 side. Snack-sized portions perfect for a quick bite.",
-        image: "/images/quick.avif",
+        image: publicImage("quick.avif"),
       },
       {
         id: 14,
         name: "Family Feast",
         price: 32.99,
         description: "8 tenders or 4 sandwiches with 3 regular sides. Perfect for sharing with family and friends.",
-        image: "/images/fam.avif",
+        image: publicImage("fam.avif"),
       },
     ],
     drinks: [
@@ -118,28 +119,28 @@ const Menu = () => {
         name: "Fresh Lemonade",
         price: 2.5,
         description: "Refreshing lemonade made with freshly squeezed lemons. The perfect way to cool down the heat.",
-        image: "/images/lemon.avif",
+        image: publicImage("lemon.avif"),
       },
       {
         id: 16,
         name: "Iced Tea",
         price: 2.0,
         description: "Classic iced tea, perfect for a hot day. Available sweetened or unsweetened.",
-        image: "/images/iced.avif",
+        image: publicImage("iced.avif"),
       },
       {
         id: 17,
         name: "Cold Brew Coffee",
         price: 3.0,
         description: "Smooth and bold cold brew, a great pick-me-up. Brewed for 24 hours for the perfect flavor.",
-        image: "/images/cold.avif",
+        image: publicImage("cold.avif"),
       },
       {
         id: 18,
         name: "Craft Beer",
         price: 5.0,
         description: "A selection of local craft beers. Ask your server about our rotating selection.",
-        image: "/images/craft.avif",
+        image: publicImage("craft.avif"),
       },
     ],
   }
